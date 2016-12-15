@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9cce31"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <!-- 学校简介 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:background="#09cc32" >
+
+            <include layout="@layout/introduce" />
+        </LinearLayout>
+
+        <!-- 实时拍照、图片展示 -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="10dp">
+
+            <include layout="@layout/showphoto" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- 底部信息栏 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp" >
+               
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#09cc32"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- 时间 -->
+
+                <!-- 时间 -->
+
+                <TextView
+                    android:id="@+id/mytime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:text="时间时间"
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp" />
+                <!-- 连接信息 -->
+
+                <TextView
+                    android:id="@+id/textConnect"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:text="正在连接网络。。。"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+                <TextView
+                    android:id="@+id/allcount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="刷卡数 : 0"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                 
+                  <TextView
+                    android:id="@+id/aaaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="上传数 : 0"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+          
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
